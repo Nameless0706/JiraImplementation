@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="calculator">
+
+        <input id="display" readonly>
+
+
+        <div id="keys">
+            <button class="operator-btn" onclick="appendInput('+')">+</button>
+            <button onclick="appendInput('7')">7</button>
+            <button onclick="appendInput('8')">8</button>
+            <button onclick="appendInput('9')">9</button>
+            <button class="operator-btn" onclick="appendInput('-')">-</button>
+            <button onclick="appendInput('4')">4</button>
+            <button onclick="appendInput('5')">5</button>
+            <button onclick="appendInput('6')">6</button>
+            <button class="operator-btn" onclick="appendInput('*')">*</button>
+            <button onclick="appendInput('1')">1</button>
+            <button onclick="appendInput('2')">2</button>
+            <button onclick="appendInput('3')">3</button>
+            <button class="operator-btn" onclick="appendInput('/')">/</button>
+            <button onclick="appendInput('0')">0</button>
+            <button onclick="appendInput('.')">.</button>
+            <button onclick="calc()">=</button>
+            <button class="operator-btn" onclick="clearInput()">C</button>
+        </div>
+
+    </div>
+        
+    
+    <script src="calculator.js"></script>
+</body>
+</html>
